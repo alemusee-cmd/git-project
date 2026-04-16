@@ -1,5 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* universal selector */
+*{
+    margin: 0;
+}
 body {
     background-color: red;
     font-family: "Roboto", sans-serif;
@@ -13,3 +17,18 @@ body {
 header {
     text-align: center;
 }
+
+header h1 {
+    padding: 20x;
+}
+
+header p {
+    margin-bottom: 10px;
+}
+.first-section {
+    text-align: center;
+}
+.first-section h2{
+    padding: 10px;
+}
+
