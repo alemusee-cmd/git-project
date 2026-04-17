@@ -5,7 +5,7 @@
     margin: 0;
 }
 body {
-    background-color: red;
+    background-color:#008F8C;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -19,7 +19,7 @@ header {
 }
 
 header h1 {
-    padding: 20x;
+    padding: 20px;
 }
 
 header p {
