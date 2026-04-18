@@ -6,6 +6,7 @@
 }
 body {
     background-color:#008F8C;
+    color:#ffffff;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -20,7 +21,7 @@ header {
 
 header h1 {
     padding: 20px;
-    color:#ffffff;
+    
 }
 
 header p {
