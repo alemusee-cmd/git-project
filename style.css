@@ -11,8 +11,6 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-variation-settings:
-    "wdth" 100;
 }
 
 header {
@@ -20,8 +18,7 @@ header {
 }
 
 header h1 {
-    padding: 20px;
-    
+    padding: 20px; 
 }
 
 header p {
@@ -29,10 +26,15 @@ header p {
 }
 .first-section {
     text-align: center;
-}
-.second-section {
-    text-align: center;
-.first-section h2{
+
+.first-section h2 {
     padding: 10px;
 }
+.first-section p {
+    padding: 10px;
+}
+
+.second-section {
+    text-align: center;
+
 
