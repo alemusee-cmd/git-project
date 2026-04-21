@@ -1,179 +1,148 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* universal selector */
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 body {
-    background-color:#008F8C;
-    color:#ffffff;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+  background-color: #008f8c;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 header {
-    text-align: center;
+  text-align: center;
 }
 
 header h1 {
-    padding: 20px; 
+  padding: 20px;
 }
 
 header p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .first-section {
-    text-align: center;
+  text-align: center;
 }
 .first-section h2 {
-    padding: 10px;
+  padding: 10px;
 }
 .first-section p {
-    padding: 10px;
+  padding: 10px;
 }
 .buttons-wrapper {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .buttons-wrapper .dark-blue-btn {
-    background-color: #042940;
-    border: none;
-    padding: 10px 30px;
-    cursor: pointer;
-    border-radius: 20px;
-    color: #DBF227;
+  background-color: #042940;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #dbf227;
 }
 .buttons-wrapper .yellow-btn {
-    background-color: #DBF227;
-    padding: 10px 30px;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    color: #042940;
+  background-color: #dbf227;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #042940;
 }
 
 .buttons-wrapper .dark-blue-btn:hover {
-    background-color: #5d8aa7;
+  background-color: #5d8aa7;
 }
 .buttons-wrapper .yellow-btn:hover {
-    background-color: #eeecc4;
+  background-color: #eeecc4;
 }
 .first-section img {
-    width: 300px;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 30px;
-    border: 5px solid #DBF227;
+  width: 300px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 30px;
+  border: 5px solid #dbf227;
 }
 .second-section {
-    height: 100vh;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    text-align: center;
+  height: 100vh;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 .second-section h2 {
-    background-color: #DBF227;
-    padding: 10px;
+  background-color: #dbf227;
+  padding: 10px;
 }
-.git-explanation p{
-    display: flex;
-    gap: 10px;
-    padding: 10px;
+.git-explanation p {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
 }
 
 .third-section {
-    height: 100vh;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    text-align: center;
-    
+  height: 100vh;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
 }
-.third-section h2{
-    margin-bottom: 20px;
-    text-align: center;
+.third-section h2 {
+  margin-bottom: 20px;
+  text-align: center;
 }
-.third-section p{
-    margin-bottom: 20px;
-    text-align: center;
+.third-section p {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    column-gap: 20px;
-    row-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 20px 20px;
 }
 
 .grid-item {
-    width: auto;
-    height: 250px;
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: column; /* מסדר את התמונה, הטקסט והכפתור בטור */
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden; /* מבטיח שהתמונה לא תצא מהגבולות המעוגלים */
 }
 
-.grid-item-one {
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.product-desc {
+  font-size: 14px;
+  color: rgb(5, 63, 107);
+  margin-bottom: 10px; /* יוצר רווח בין הטקסט לבין הכפתור שמתחתיו */
+  padding: 5px 10px;
+  border-radius: 5px;
 }
-.grid-item-one .white-btn {
-    background-color: #042940;
-    border: none;
-    padding: 10px 30px;
-    cursor: pointer;
-    border-radius: 20px;
-    color: #DBF227;
+.product-image {
+  width: 100%; /* שהתמונה תתפרס על כל רוחב הריבוע */
+  height: 200px; /* גובה אחיד לכל התמונות באתר */
+  object-fit: cover; /* שומר שהתמונה לא תתעוות */
 }
-
-.grid-item-two {
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.item-details {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* יוצר רווח קבוע בין הטקסט לכפתור */
+  align-items: center;
 }
-.grid-item-three {
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.white-btn {
+  background-color: #042940;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  color: #dbf227;
 }
-.grid-item-four {
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.grid-item-five {
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.grid-item-six {
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.grid-item-seven {
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.grid-item-eight {
-    background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.white-btn:hover {
+  background-color: #5d8aa7;
 }
