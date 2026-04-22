@@ -11,60 +11,38 @@ body {
   font-weight: 300;
   font-style: normal;
 }
-
-header {
+.hero-section {
+  height: 60vh; /* תופס 60% מגובה המסך */
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://rotterdampartners-rp-website-p01.s3.eu-central-1.amazonaws.com/Woei_Shop_Sneakers_321c03d0b5.jpg"); /* לינק לדוגמה של נעליים */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  color: #ffffff;
 }
-
-header h1 {
-  padding: 20px;
-}
-
-header p {
+.hero-overlay h1 {
+  font-size: 3rem;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
-.first-section {
-  text-align: center;
-}
-.first-section h2 {
-  padding: 10px;
-}
-.first-section p {
-  padding: 10px;
-}
-.buttons-wrapper {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-.buttons-wrapper .dark-blue-btn {
-  background-color: #042940;
-  border: none;
-  padding: 10px 30px;
-  cursor: pointer;
-  border-radius: 20px;
-  color: #dbf227;
-}
-.buttons-wrapper .yellow-btn {
-  background-color: #dbf227;
-  padding: 10px 30px;
-  border: none;
-  cursor: pointer;
-  border-radius: 20px;
+.cta-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #dbf227; /* הצבע הזרחני מהכפתורים הקודמים שלך */
   color: #042940;
-}
-
-.buttons-wrapper .dark-blue-btn:hover {
-  background-color: #5d8aa7;
-}
-.buttons-wrapper .yellow-btn:hover {
-  background-color: #eeecc4;
-}
-.first-section img {
-  width: 300px;
-  height: auto;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px;
   margin-top: 20px;
-  border-radius: 30px;
-  border: 5px solid #dbf227;
+  transition: 0.3s;
+}
+.cta-button:hover {
+  transform: scale(1.1);
+  background-color: white;
 }
 .second-section {
   height: 100vh;
