@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  --primary-color: #1a73e8;
+  --primary-hover-color: #7da8dc;
+  --bg-color: #e1dddd;
+  --bg-light-color: #f5f5f5;
+  --text-main: #333;
+  --border-color: #ccc;
+  --gray-color: #666;
+
+  /* status colors */
+  --status-active-text: #168719;
+  --status-pending-text: #afcb4b;
+  --status-inactive-text: #7a7a7a;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  padding: 20px;
+}
+.dashbord-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.dashbord-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+.btn-primary:hover {
+  background-color: var(--primary-hover-color);
+}
+
+.table-wrapper {
+  background-color: var(--bg-light-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 500px;
+}
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.user-table th {
+  background-color: var(--text-main);
+  color: var(--bg-light-color);
+  backdrop-filter: 8px;
+  padding: 12px;
+  border-bottom: 2px solid var(--border-color);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.user-table td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.user-cell img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+.user-name {
+  color: var(--text-main);
+  font-size: 16px;
+}
+.user-email {
+  color: var(--gray-color);
+  font-size: 16px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 15px;
+}
