@@ -5,85 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rock-paper-scissore</title>
   </head>
+  <link rel="stylesheet" href="style.css" />
   <body>
-    <button
-      onclick="
-        const randomnumber = Math.random();
-        let computerchoice = '';
-        if (randomnumber >= 0 && randomnumber < 1 / 3) {
-          computerchoice = 'Rock';
-        } else if (randomnumber >= 1 / 3 && randomnumber < 2 / 3) {
-          computerchoice = 'Paper';
-        } else if (randomnumber >= 2 / 3 && randomnumber < 1) {
-          computerchoice = 'Scissor';
-        }
-        let result = '';
-        if (computerchoice === 'Rock') {
-          result = 'Draw';
-        } else if (computerchoice === 'Paper') {
-          result = 'You lose';
-        } else if (computerchoice === 'Scissor') {
-          result = 'You win';
-        }
-        console.log(
-          `you picked Rock & computer picked ${computerchoice} . ${result}`,
-        );
-      "
-    >
-      Rock
-    </button>
+    <header class="hero-section">
+      <h1>Let's game play: Rock-Paper-Scissore</h1>
+      <span>🪨📃✂️</span>
+    </header>
+    <div class="buttons-container">
+      <!-- Rock -->
+      <button class="Rock" onclick="PlayerGame('Rock')">
+        <img src="images/rock-emoji.png" />
+      </button>
 
-    <button
-      onclick="
-        const randomnumber = Math.random();
-        let computerchoice = '';
-        if (randomnumber >= 0 && randomnumber < 1 / 3) {
-          computerchoice = 'Rock';
-        } else if (randomnumber >= 1 / 3 && randomnumber < 2 / 3) {
-          computerchoice = 'Paper';
-        } else if (randomnumber >= 2 / 3 && randomnumber < 1) {
-          computerchoice = 'Scissor';
-        }
+      <!-- Paper -->
+      <button class="Paper" onclick="PlayerGame('Paper')">
+        <img src="images/paper-emoji.png" />
+      </button>
 
-        let result = '';
-        if (computerchoice === 'Rock') {
-          result = 'Draw';
-        } else if (computerchoice === 'Paper') {
-          result = 'You lose';
-        } else if (computerchoice === 'Scissor') {
-          result = 'You win';
-        }
-        console.log(
-          `you picked Paper & computer picked ${computerchoice} . ${result}`,
-        );
-      "
-    >
-      Paper
-    </button>
-    <button
-      onclick="
-        const randomnumber = Math.random();
-        let computerchoice = '';
-        if (randomnumber >= 0 && randomnumber < 1 / 3) {
-          computerchoice = 'Rock';
-        } else if (randomnumber >= 1 / 3 && randomnumber < 2 / 3) {
-          computerchoice = 'Paper';
-        } else if (randomnumber >= 2 / 3 && randomnumber < 1) {
-          computerchoice = 'Scissor';
-        }
-        let result = '';
-        if (computerchoice === 'Rock') {
-          result = 'Draw';
-        } else if (computerchoice === 'Paper') {
-          result = 'You lose';
-        } else if (computerchoice === 'Scissor') {
-          result = 'You win';
-        }
-        console.log(
-          `you picked Rock & computer picked ${computerchoice} . ${result}`,
-      "
-    >
-      Scissor
-    </button>
+      <!-- Scissor -->
+      <button class="Scissor" onclick="PlayerGame('Scissor')">
+        <img src="images/scissor-emoji.png" />
+      </button>
+    </div>
+    <div class="stats-container">
+      <p class="picks">
+        <!-- innerHTML -->
+      </p>
+      <p class="result">
+        <!-- innerHTML -->
+      </p>
+      <p class="score">
+        <!-- innerHTML -->
+      </p>
+    </div>
+    <div class="reset-game-container">
+      <button
+        class="reset-btn"
+        onclick="
+          score.wins = 0;
+          score.Draws = 0;
+          score.losses = 0;
+          localStorage.removeItem('score');
+          updateScore();
+        "
+      >
+        Reset game🔄️
+      </button>
+      <button class="start-auto-btn" onclick="startAuto()">
+        ♾️start auto game ♾️
+      </button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
