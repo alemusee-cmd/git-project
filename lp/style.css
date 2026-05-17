@@ -1,0 +1,24 @@
+.memory-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 עמודות שוות */
+  gap: 10px; /* מרווח בין הקלפים */
+  width: 400px;
+  margin: 0 auto;
+}
+
+.card {
+  height: 100px;
+  background-color: #0e3577; /* צבע גב הקלף */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: transparent; /* מחביא את האייקון/טקסט בהתחלה */
+}
+
+/* קלאס שנוסיף ב-JS כשהשחקן לוחץ על קלף */
+.card.flipped {
+  background-color: #fff;
+  color: #000; /* מציג את האייקון */
+}
