@@ -147,4 +147,11 @@ for (let i = 0; 0 < fruits.length; i++) {
 function drawTriangle() {
   let triangle = "";
   let stars = "*";
+  for (let i = 0; i < 10; i++) {
+    stars += "*";
+    triangle += stars;
+  }
+  console.log(triangle);
 }
+
+drawTriangle;
