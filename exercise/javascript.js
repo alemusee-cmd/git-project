@@ -139,19 +139,48 @@
 //   console.log("Hello" + (i + 1));
 // }
 
-let fruits = ["banana", "mango", "orange", "apple"];
-for (let i = 0; 0 < fruits.length; i++) {
-  console.log(fruits[i]);
-}
+// let fruits = ["banana", "mango", "orange", "apple"];
+// for (let i = 0; 0 < fruits.length; i++) {
+//   console.log(fruits[i]);
+// }
+// ----------------------------------------------------------
+// function drawTriangle() {
+//   let triangle = "";
+//   let stars = "";
+//   for (let i = 0; i < 10; i++) {
+//     stars += "*";
+//     triangle += stars + "\n";
+//   }
+//   console.log(triangle);
+// }
 
-function drawTriangle() {
-  let triangle = "";
-  let stars = "*";
-  for (let i = 0; i < 10; i++) {
-    stars += "*";
-    triangle += stars;
+// drawTriangle();
+
+// function drawTriangle(size) {
+//   let triangle = "";
+//   let stars = "";
+//   for (let i = 0; i < size; i++) {
+//     stars += "*";
+//     triangle += stars + "\n";
+//   }
+//   console.log(triangle);
+// }
+
+// drawTriangle(8);
+// drawTriangle(3);
+
+// ----------------------------------------------------------
+
+const vat = 0.18;
+let price = 300;
+
+function calculateTotal(vat, price) {
+  if (vat != 0.18) {
+    return "error: vat amount's incorrect";
+  } else {
+    let taxAmount = price * vat;
+    return price + taxAmount;
   }
-  console.log(triangle);
 }
-
-drawTriangle;
+let sucessResult = calculateTotal(vat, price);
+console.log(sucessResult);
