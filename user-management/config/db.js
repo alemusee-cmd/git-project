@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+// mongoose הבאנו את הפונקציה
 async function connectDB() {
   try {
     await mongoose.connect(
@@ -12,3 +12,4 @@ async function connectDB() {
 }
 
 module.exports = connectDB;
+// יצירת אפשרות להתחבר אליה מקבצים אחרים
