@@ -39,7 +39,7 @@ async function createUser(req, res) {
   }
 }
 
-async function deleteUser(req, res) {
+async function deletedUser(req, res) {
   try {
     const deletedUser = await User.findByIdAndDelete(req.params.id);
     if (!deletedUser) {
@@ -58,5 +58,5 @@ module.exports = {
   getAllUsers,
   getAllUserById,
   createUser,
-  deleteUser,
+  deletedUser,
 };

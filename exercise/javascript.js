@@ -303,3 +303,135 @@
 // }
 // let result = filterLargeServers(allServers);
 // console.log(result);
+
+// ------------------------------------------------------------------
+// פונקציות שקוראות לפונקציות אחרות
+// function applyDiscount(price, discountAmount) {
+//   return price - discountAmount;
+// }
+
+// function addTax(price) {
+//   return price * 1.18;
+// }
+
+// function calculatefinalPrice(orgenalPrice, discount) {
+//   let priceAfterDiscount = applyDiscount(orgenalPrice, discount);
+//   let finalPrice = addTax(priceAfterDiscount);
+//   return finalPrice;
+// }
+// let myTotal = calculatefinalPrice(180, 30);
+// console.log(myTotal);
+
+// // מחשבון משכורת נטו לעובד
+// function calculateGross(hours, rate) {
+//   return hours * rate;
+// }
+// function deductTaxes(grossAmount) {
+//   return grossAmount * 0.9;
+// }
+// function getNetSalary(hours, rate) {
+//   let grossSalary = calculateGross(hours, rate);
+//   let netSalary = deductTaxes(grossSalary);
+//   return netSalary;
+// }
+// let finalSalary = getNetSalary(180, 55);
+// console.log(finalSalary);
+
+// total order price
+// function calcItemcost(price, quantity) {
+//   return price * quantity;
+// }
+// function shipmentPrice(shipPrice) {
+//   return shipPrice + 30;
+// }
+// function calcTotalPrice(price, quantity) {
+//   let finalOrderPrice = calcItemcost(price, quantity);
+//   let finalPrice = shipmentPrice(finalOrderPrice);
+//   return finalPrice;
+// }
+// let totalOrdercost = calcTotalPrice(350, 8);
+// console.log(totalOrdercost);
+
+// ----------------------------------------------------------
+// מערכת ציונים
+// 1. חישוב הממוצע (חילוק ב-3)
+// function calcAverage(grade1, grade2, grade3) {
+//   return (grade1 + grade2 + grade3) / 3;
+// }
+
+// // 2. בדיקה האם הממוצע עובר (מספר בודד, בלי לולאה)
+// function checkPass(averageGrade) {
+//   if (averageGrade >= 60) {
+//     return `עברת! ציון הממוצע שלך הוא ${averageGrade.toFixed(2)}`;
+//   } else {
+//     return `נכשלת! ציון הממוצע שלך הוא ${averageGrade.toFixed(2)}`;
+//   }
+// }
+
+// // 3. הפונקציה הראשית - כתבת אותה מושלם!
+// function getStudentStatus(grade1, grade2, grade3) {
+//   let totalAverage = calcAverage(grade1, grade2, grade3);
+//   let studentStatus = checkPass(totalAverage);
+//   return studentStatus;
+// }
+
+// let finalAverage = getStudentStatus(80, 70, 100);
+// console.log(finalAverage); // ידפיס "עברת!" כי הממוצע הוא 83.33
+
+// ---------------------------------------------------------------------
+// מחשבון קלוריות לאימון (המרת מידות)
+// function minutesToHours(minutes) {
+//   return minutes / 60;
+// }
+// function calcCalories(hours, caloriesPerHour) {
+//   return hours * caloriesPerHour;
+// }
+// function getWorkoutSummary(minutes, caloriesPerHour) {
+//   let totalHours = minutesToHours(minutes);
+//   let finalCalories = calcCalories(totalHours, caloriesPerHour);
+//   return finalCalories;
+// }
+// console.log(getWorkoutSummary(120, 400));
+
+// -----------------------------------------------------------------
+// מערכת קופונים חכמה
+// function totalPrice(price, quantity) {
+//   return price * quantity;
+// }
+// function applayCoupon(amount) {
+//   if (amount >= 200) {
+//     return `קיבלת 50 ש"ח הנחה, הסכום לתשלום אחרי הנחה הוא: ${amount - 50}`;
+//   } else {
+//     return `סה"כ לתשלום: ${amount}`;
+//   }
+// }
+// function finalCheckout(price, quantity) {
+//   let calcTotalPrice = totalPrice(price, quantity);
+//   let finalPrice = applayCoupon(calcTotalPrice);
+//   return finalPrice;
+// }
+// console.log(finalCheckout(100, 5));
+// console.log(finalCheckout(100, 1));
+
+// ---------------------------------------------------------
+// פונקציות חץ (Arrow Functions)
+// function minutesToHours(minutes) {
+//   return minutes / 60;
+// }
+// const calcMinutesToHours = (minutes) => minutes / 60;
+
+// function calcCalories(hours, caloriesPerHour) {
+//   return hours * caloriesPerHour;
+// }
+// const calcCalories = (hours, caloriesPerHour) => hours * caloriesPerHour;
+
+// function finalCheckout(price, quantity) {
+//   let calcTotalPrice = totalPrice(price, quantity);
+//   let finalPrice = applyCoupon(calcTotalPrice);
+//   return finalPrice;
+// }
+// const finalCheckout = (price, quantity) => {
+//   let calcTotalPrice = totalPrice(price, quantity);
+//   let finalPrice = applyCoupon(calcTotalPrice);
+//   return finalPrice;
+// };

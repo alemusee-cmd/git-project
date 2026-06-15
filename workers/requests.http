@@ -1,0 +1,24 @@
+@baseUrl = http://localhost:3000 
+
+###
+GET {{baseUrl}}
+
+###
+GET {{baseUrl}}/api/workers
+
+###
+GET {{baseUrl}}/id/workers
+
+###
+POST {{baseUrl}}/api/workers
+Content-Type: application/json
+
+{
+    "name": "benny Levi",
+    "email": "benny.l@company.com",
+    "phone": "052-7654321",
+    "department": "Engineering",
+    "role": "Team Lead"
+}
+###
+DELETE  {{baseUrl}}/api/workers/6a2580834b6e999bf7a379f3 

@@ -20,3 +20,5 @@ Content-Type: application/json
     "age": 35
 
 }
+###
+DELETE  {{baseUrl}}/api/users/6a2580834b6e999bf7a379f3 

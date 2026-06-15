@@ -1,0 +1,16 @@
+const express = require("express");
+const {
+  getAllWorker,
+  getAllWorkerById,
+  createWorker,
+  deletedWorker,
+} = require("../controllers/workers.controller");
+
+const routes = express.Router();
+
+routes.get("/", getAllWorker);
+routes.get("/", getAllWorkerById);
+routes.post("/", createWorker);
+routes.delete("/:id", deletedWorker);
+
+module.exports = routes;
