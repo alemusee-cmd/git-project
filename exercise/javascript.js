@@ -435,3 +435,9 @@
 //   let finalPrice = applyCoupon(calcTotalPrice);
 //   return finalPrice;
 // };
+
+let names = ["גלית", "דניאל", "נורית"];
+names.forEach((name) => console.log("hello " + name));
+
+let prices = [20, 45, 89, 75];
+prices.forEach((price) => console.log('סה"כ לתשלום ' + price));
